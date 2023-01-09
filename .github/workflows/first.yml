@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: helo world
+      - name: helo world world
         run: echo "hello this is first action"
         shell: bash 
   goodbye:
