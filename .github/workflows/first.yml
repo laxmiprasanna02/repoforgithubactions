@@ -1,0 +1,22 @@
+name: first gitaction workflow
+on:
+  push:
+    branches:
+      - main
+    pull_request:
+      - main
+    workflow_dispatch:
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: helo world
+        run: echo "hello this is first action"
+        shell: bash 
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: goodbye job
+        run: echo "good bye bye bye"
+        shell: bash      
