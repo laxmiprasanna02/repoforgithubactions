@@ -18,13 +18,14 @@ jobs:
       - name: java version
         run: java -version
       - name: maven installation
-        run: |
+        run: | 
              sudo apt install maven -y
              sudo mkdir maven
              cd maven
              sudo wget https://github.com/krishnapuppala97/maven-web-application.git 
+             pwd |ls -l
     
-             mvn clean package       
+             #mvn clean package       
              
       
       
