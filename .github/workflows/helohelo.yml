@@ -21,7 +21,7 @@ jobs:
         run: |
              sudo apt install maven -y
              sudo mkdir maven
-             sudo cd maven
+             cd maven
              wget https://github.com/krishnapuppala97/maven-web-application.git 
              
       
