@@ -1,0 +1,18 @@
+name: first github actions
+on:
+  push:
+    branches:
+      - main
+    pull_request:
+      - main
+    workflow_dispatch:
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: hello world
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+        #shell: bash 
