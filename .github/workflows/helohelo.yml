@@ -22,7 +22,7 @@ jobs:
              sudo apt install maven -y
              sudo mkdir maven
              cd maven
-             sudo wget https://github.com/krishnapuppala97/maven-web-application.git 
+             sudo git clone https://github.com/krishnapuppala97/maven-web-application.git 
              pwd |ls -l
     
              mvn clean package       
