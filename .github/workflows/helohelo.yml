@@ -17,4 +17,6 @@ jobs:
           java-version: 1.8
       - name: java version
         run: java -version
+      - name: maven installation
+        run: install maven -y    
         shell: bash 
