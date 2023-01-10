@@ -18,5 +18,5 @@ jobs:
       - name: java version
         run: java -version
       - name: maven installation
-        run:  apt install maven -y    
+        run:  sudo apt install maven -y    
         shell: bash 
