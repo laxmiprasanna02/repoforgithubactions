@@ -26,7 +26,8 @@ jobs:
              pwd |ls -l
              cd maven-web-application
              sudo mvn clean package
-      - name: docker image
+             docker build --file Dockerfile --tag laxmi .
+     #- name: docker image
         run: |
              cd maven-web-application
              docker build --file Dockerfile --tag laxmi .
