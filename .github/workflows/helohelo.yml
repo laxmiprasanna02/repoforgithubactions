@@ -26,7 +26,7 @@ jobs:
              pwd |ls -l
              cd maven-web-application
     
-             mvn clean compile      
+             sudo mvn clean compile      
              
       
       
