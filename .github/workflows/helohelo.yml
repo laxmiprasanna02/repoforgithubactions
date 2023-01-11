@@ -29,11 +29,11 @@ jobs:
              
       - name: docker image
         run: |
-             cd maven-web-application
-             docker build . --file Dockerfile --tag laxm:123 
+              cd maven-web-application
+              docker build . --file Dockerfile --tag laxm:123 
         
        
              
       
       
-      #  shell: bash 
+        shell: bash 
