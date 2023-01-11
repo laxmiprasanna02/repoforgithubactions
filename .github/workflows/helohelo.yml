@@ -25,8 +25,12 @@ jobs:
              sudo git clone https://github.com/krishnapuppala97/maven-web-application.git 
              pwd |ls -l
              cd maven-web-application
-    
-             sudo mvn clean compile      
+             sudo mvn clean package
+      - name: docker image
+        run: |
+             docker build --file Dockerfile --tag laxmi .
+        
+       
              
       
       
