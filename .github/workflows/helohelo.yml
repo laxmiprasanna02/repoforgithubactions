@@ -28,6 +28,7 @@ jobs:
              sudo mvn clean package
       - name: docker image
         run: |
+             cd maven-web-application
              docker build --file Dockerfile --tag laxmi .
         
        
