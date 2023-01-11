@@ -30,7 +30,7 @@ jobs:
       - name: docker image
         run: |
              cd maven-web-application
-             docker build . --file Dockerfile --tag laxmi:1 
+             docker build . --file Dockerfile --tag laxm:123 
         
        
              
