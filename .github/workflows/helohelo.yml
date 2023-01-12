@@ -33,9 +33,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       
-        
-          uses: docker/build-push-action@v3
-          with: ./dockerfile
+      - name: push image to github  
+        uses: docker/build-push-action@v3
+        with: ./dockerfile
           push: true
           tags: user/laxmi:1234
         
