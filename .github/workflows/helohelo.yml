@@ -32,13 +32,15 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      
-      - name: push image to github  
+      - name: push image to docker hub
         uses: docker/build-push-action@v3
         with: ./dockerfile
+          context: .
           push: true
           tags: user/laxmi:1234
         
+        
+  
        
              
       
