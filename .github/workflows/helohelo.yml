@@ -63,6 +63,7 @@ jobs:
           IMAGE_TAG: latest
         run: |
            docker images ls
-           docker build . -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG 
+           docker build . --file Dockerfile -t laxm:1 
+           
            docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
